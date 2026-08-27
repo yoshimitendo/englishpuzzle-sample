@@ -2,6 +2,10 @@ document.addEventListener("dblclick", (e) => {
     e.preventDefault();
 }, {passive: false})
 
+document.addEventListener("pointermove", (e) => {
+    e.preventDefault();
+}, {passive: false})
+
 const problem = document.getElementById("problemFront");
 const gamelayer = document.getElementById("GameLayer");
 
@@ -25,6 +29,7 @@ PIECES.forEach((p) => {
     piece.addEventListener("pointerdown", (e) => {
         e.preventDefault();
         piece.isPointer = true;
+        piece.style.background = "#f09d9d"
         const rect = piece.getBoundingClientRect();
         piece.pointerX = e.clientX - rect.left;
         piece.pointerY = e.clientY - rect.top;
@@ -34,6 +39,7 @@ PIECES.forEach((p) => {
 
     piece.addEventListener("pointerup", (e) => {
         e.preventDefault();
+        piece.style.background = "#e9eef3";
         piece.isPointer = false;
 
         piece.releasePointerCapture(e.pointerId);
