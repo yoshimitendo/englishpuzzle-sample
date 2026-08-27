@@ -6,7 +6,7 @@ html, body {
 }
 
 html {
-    background: linear-gradient(135deg, #fff0f6, #eaf9ff);
+    background: black;
 }
 
 body {
@@ -19,6 +19,7 @@ body {
     -webkit-user-select: none;
 
     background: linear-gradient(135deg, #fff0f6, #eaf9ff);
+    background: #e0e0e0;
 }
 
 #problem {
@@ -29,17 +30,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: clamp(8px, 1vw, 12px);
+    padding: clamp(12px, 1.5vw, 18px);
     width: 90%;
     height: auto;
     box-sizing: border-box;
 
     font-size: clamp(16px, 2vw, 24px);
     font-family: sans-serif;
-    font-weight: bold;
-    border-radius: clamp(8px, 1vw, 12px);
-    color: #ffffff;
-    background: linear-gradient(135deg, #ff0062, #db0000);
+    font-weight: lighter;
+    border-radius: 20px;
+    color: black;
+    background: linear-gradient(135deg, #e0e0e0, #e0e0e0);
+    box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
 }
 
 #GameLayer {
@@ -50,8 +52,10 @@ body {
     width: 90%;
     height: 100%;
 
-    border: 2px solid #cf0061;
-    border-radius: clamp(8px, 1vw, 12px);;
+    border-radius: clamp(8px, 1vw, 12px);
+    box-shadow:
+        inset 8px 8px 16px #bebebe,
+        inset -8px -8px 16px #ffffff;
 }
 
 .pieces {
