@@ -15,23 +15,23 @@ body {
 
 #problem {
     position: relative;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8px;
+    padding: 1vw;
     width: 90%;
     height: auto;
     box-sizing: border-box;
 
-    font-size: 16px;
+    font-size: 3vw;
     font-family: sans-serif;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 2vw;
     color: white;
-    background: linear-gradient(135deg, #da0c7d, #cf1c1c);
+    background: linear-gradient(135deg, #b816b0, #cf1c49);
 }
 
 #GameLayer {
