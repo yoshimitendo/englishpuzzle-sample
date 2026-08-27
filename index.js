@@ -1,4 +1,4 @@
-window.addEventListener("dblclick", (e) => {
+document.addEventListener("dblclick", (e) => {
     e.preventDefault();
 }, {passive: false})
 
