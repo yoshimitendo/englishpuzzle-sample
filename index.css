@@ -68,7 +68,7 @@ body {
 
     cursor: pointer;
 
-    font-size: clamp(16px, 2vw, 24px);
+    font-size: clamp(20px, 2.5vw, 30px);
     font-family: sans-serif;
     border-radius: clamp(8px, 1vw, 12px);
     color: black;
