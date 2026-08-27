@@ -48,7 +48,6 @@ body {
 
 #GameLayer {
     position: relative;
-    margin-bottom: clamp(16px, 2vw, 24px);
     width: 90%;
     height: 100%;
 
@@ -76,4 +75,15 @@ body {
     box-shadow:
         4px 4px 8px #a1a7b9,
         -4px -4px 8px #ffffff;
+}
+
+#menu {
+    position: relative;
+    margin-top: clamp(16px, 2vw, 24px);
+    margin-bottom: clamp(16px, 2vw, 24px);
+    width: 300px;
+    height: 48px;
+
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px #a1a7b9, -4px -4px 8px #ffffff;
 }
