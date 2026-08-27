@@ -11,7 +11,7 @@ const gamelayer = document.getElementById("GameLayer");
 
 problem.textContent = "サッカー場に向かって走っている男の子を私は見た。";
 
-const PIECES = ["I", "saw", "a", "man", "running", "toward", "the", "statiton"];
+const PIECES = ["I", "saw", "a", "man", "running", "toward", "the", "station"];
 
 PIECES.forEach((p) => {
     const piece = document.createElement("div");
