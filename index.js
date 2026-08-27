@@ -23,6 +23,7 @@ PIECES.forEach((p) => {
     piece.isPointer = false;
 
     piece.addEventListener("pointerdown", (e) => {
+        e.preventDefault();
         piece.isPointer = true;
         const rect = piece.getBoundingClientRect();
         piece.pointerX = e.clientX - rect.left;
@@ -32,12 +33,14 @@ PIECES.forEach((p) => {
     })
 
     piece.addEventListener("pointerup", (e) => {
+        e.preventDefault();
         piece.isPointer = false;
 
         piece.releasePointerCapture(e.pointerId);
     })
 
     piece.addEventListener("pointermove", (e) => {
+        e.preventDefault();
         if (!piece.isPointer) return;
         const rect = gamelayer.getBoundingClientRect();
         piece.style.left = `${e.clientX - piece.pointerX - rect.left}px`;
