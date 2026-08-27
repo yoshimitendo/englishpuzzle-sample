@@ -1,3 +1,7 @@
+window.addEventListener("dblclick", (e) => {
+    e.preventDefault();
+}, {passive: false})
+
 const problem = document.getElementById("problem");
 const gamelayer = document.getElementById("GameLayer");
 
