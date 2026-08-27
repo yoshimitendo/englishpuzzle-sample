@@ -14,7 +14,7 @@ body {
     user-select: none;
     -webkit-user-select: none;
 
-    background: #e8f0fa;
+    background: #e9eef3;
 }
 
 #problem {
@@ -28,7 +28,7 @@ body {
     box-sizing: border-box;
 
     border-radius: 20px;
-    box-shadow: 8px 8px 16px #a1a7b9, -8px -8px 16px #ffffff;
+    box-shadow: 4px 4px 8px #a1a7b9, -4px -4px 8px #ffffff;
 }
 
 #problemFront {
@@ -55,8 +55,8 @@ body {
     overflow: hidden;
     border-radius: clamp(8px, 1vw, 12px);
     box-shadow:
-        inset 8px 8px 16px #a1a7b9,
-        inset -8px -8px 16px #ffffff;
+        inset 4px 4px 8px #a1a7b9,
+        inset -4px -4px 8px #ffffff;
 }
 
 .pieces {
@@ -72,8 +72,8 @@ body {
     font-family: sans-serif;
     border-radius: clamp(8px, 1vw, 12px);
     color: black;
-    background: #e8f0fa;
+    background: #e9eef3;
     box-shadow:
-        8px 8px 16px #a1a7b9,
-        -8px -8px 16px #ffffff;
+        4px 4px 8px #a1a7b9,
+        -4px -4px 8px #ffffff;
 }
