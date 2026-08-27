@@ -2,7 +2,7 @@ document.addEventListener("dblclick", (e) => {
     e.preventDefault();
 }, {passive: false})
 
-const problem = document.getElementById("problem");
+const problem = document.getElementById("problemFront");
 const gamelayer = document.getElementById("GameLayer");
 
 problem.textContent = "サッカー場に向かって走っている男の子を私は見た。";
