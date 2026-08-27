@@ -18,8 +18,7 @@ body {
     user-select: none;
     -webkit-user-select: none;
 
-    background: linear-gradient(135deg, #fff0f6, #eaf9ff);
-    background: #e0e0e0;
+    background: #e8f0fa;
 }
 
 #problem {
@@ -40,8 +39,7 @@ body {
     font-weight: lighter;
     border-radius: 20px;
     color: black;
-    background: linear-gradient(135deg, #e0e0e0, #e0e0e0);
-    box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+    box-shadow: 8px 8px 16px #a1a7b9, -8px -8px 16px #ffffff;
 }
 
 #GameLayer {
@@ -54,7 +52,7 @@ body {
 
     border-radius: clamp(8px, 1vw, 12px);
     box-shadow:
-        inset 8px 8px 16px #bebebe,
+        inset 8px 8px 16px #a1a7b9,
         inset -8px -8px 16px #ffffff;
 }
 
@@ -70,9 +68,11 @@ body {
 
     font-size: clamp(16px, 2vw, 24px);
     font-family: sans-serif;
-    font-weight: bold;
+    font-weight: lighter;
     border-radius: clamp(8px, 1vw, 12px);
-    border: 2px solid #3d71ff;
     color: black;
-    background: #bdcfff;
+    background: #e8f0fa;
+    box-shadow:
+        8px 8px 16px #a1a7b9,
+        -8px -8px 16px #ffffff;
 }
