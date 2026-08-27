@@ -5,10 +5,6 @@ html, body {
     overflow: hidden;
 }
 
-html {
-    background: black;
-}
-
 body {
     display: flex;
     flex-direction: column;
@@ -25,7 +21,6 @@ body {
     position: relative;
     margin-top: clamp(16px, 2vw, 24px);
     margin-bottom: clamp(16px, 2vw, 24px);
-
     display: flex;   
     padding: 3px;
     width: 90%;
@@ -48,17 +43,16 @@ body {
     font-family: sans-serif;
     border-radius: 17px;
     color: white;
-    background: linear-gradient(150deg, #c380c9, #ee6e6e);
+    background: linear-gradient(150deg, #695897, #865271);
 }
 
 #GameLayer {
     position: relative;
     margin-bottom: clamp(16px, 2vw, 24px);
-    overflow: hidden;
-
     width: 90%;
     height: 100%;
 
+    overflow: hidden;
     border-radius: clamp(8px, 1vw, 12px);
     box-shadow:
         inset 8px 8px 16px #a1a7b9,
@@ -67,7 +61,6 @@ body {
 
 .pieces {
     position: absolute;
-
     display: flex;
     justify-content: center;
     align-items: center;
