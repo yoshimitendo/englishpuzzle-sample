@@ -14,8 +14,27 @@ PIECES.forEach((p) => {
     piece.className = "pieces"
     piece.textContent = p;
 
-    piece.style.left = `${Math.random() * 100}%`;
-    piece.style.top = `${Math.random() * 100}%`;
+    piece.style.left = `${Math.random() * 100}px`;
+    piece.style.top = `${Math.random() * 100}px`;
 
     gamelayer.appendChild(piece);
+
+    piece.isPointer = false;
+
+    piece.addEventListener("pointerdown", (e) => {
+        piece.isPointer = true;
+        const rect = piece.getBoundingClientRect();
+        piece.pointerX = e.clientX - rect.left;
+        piece.pointerY = e.clientY - rect.top;
+    })
+
+    piece.addEventListener("pointerup", (e) => {
+        piece.isPointer = false;
+    })
+
+    piece.addEventListener("pointermove", (e) => {
+        if (!piece.isPointer) {return;}
+        piece.style.left = `${e.clientX - piece.pointerX}px`;
+        piece.style.top = `${e.clientY - piece.pointerY}px`;
+    })
 })
