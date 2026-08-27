@@ -26,20 +26,29 @@ body {
     margin-top: clamp(16px, 2vw, 24px);
     margin-bottom: clamp(16px, 2vw, 24px);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: clamp(12px, 1.5vw, 18px);
+    display: flex;   
+    padding: 3px;
     width: 90%;
     height: auto;
     box-sizing: border-box;
 
+    border-radius: 20px;
+    box-shadow: 8px 8px 16px #a1a7b9, -8px -8px 16px #ffffff;
+}
+
+#problemFront {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: clamp(12px, 1.5vw, 18px);
+
     font-size: clamp(16px, 2vw, 24px);
     font-family: sans-serif;
-    font-weight: lighter;
-    border-radius: 20px;
-    color: black;
-    box-shadow: 8px 8px 16px #a1a7b9, -8px -8px 16px #ffffff;
+    border-radius: 17px;
+    color: white;
+    background: linear-gradient(150deg, #c380c9, #ee6e6e);
 }
 
 #GameLayer {
@@ -68,7 +77,6 @@ body {
 
     font-size: clamp(16px, 2vw, 24px);
     font-family: sans-serif;
-    font-weight: lighter;
     border-radius: clamp(8px, 1vw, 12px);
     color: black;
     background: #e8f0fa;
