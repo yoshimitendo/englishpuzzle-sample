@@ -28,7 +28,9 @@ body {
     box-sizing: border-box;
 
     border-radius: 20px;
-    box-shadow: 4px 4px 8px #a1a7b9, -4px -4px 8px #ffffff;
+    box-shadow:
+        4px 4px 8px #a1a7b9,
+        -4px -4px 8px #ffffff;
 }
 
 #problemFront {
@@ -86,5 +88,7 @@ body {
     height: 48px;
 
     border-radius: 20px;
-    box-shadow: 4px 4px 8px #a1a7b9, -4px -4px 8px #ffffff;
+    box-shadow:
+        4px 4px 8px #a1a7b9,
+        -4px -4px 8px #ffffff;
 }
