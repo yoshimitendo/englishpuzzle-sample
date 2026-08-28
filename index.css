@@ -14,7 +14,7 @@ body {
     user-select: none;
     -webkit-user-select: none;
 
-    background: #e9eef3;
+    background: #dfe7ee;
 }
 
 #problem {
@@ -22,15 +22,16 @@ body {
     margin-top: clamp(16px, 2vw, 24px);
     margin-bottom: clamp(16px, 2vw, 24px);
     display: flex;   
-    padding: 3px;
+    padding: 5px;
     width: 90%;
     height: auto;
     box-sizing: border-box;
 
     border-radius: 20px;
+    background: none;
     box-shadow:
-        4px 4px 8px #a1a7b9,
-        -4px -4px 8px #ffffff;
+        inset 6px 6px 12px #a1a7b9,
+        inset -6px -6px 12px #ffffff;
 }
 
 #problemFront {
@@ -43,9 +44,9 @@ body {
 
     font-size: clamp(16px, 2vw, 24px);
     font-family: sans-serif;
-    border-radius: 17px;
+    border-radius: 15px;
     color: white;
-    background: linear-gradient(150deg, #695897, #865271);
+    background: linear-gradient(150deg, #674eac, #ac5087);
 }
 
 #GameLayer {
@@ -55,6 +56,7 @@ body {
 
     overflow: hidden;
     border-radius: clamp(8px, 1vw, 12px);
+    background: none;
     box-shadow:
         inset 4px 4px 8px #a1a7b9,
         inset -4px -4px 8px #ffffff;
@@ -74,7 +76,7 @@ body {
     font-family: sans-serif;
     border-radius: clamp(8px, 1vw, 12px);
     color: black;
-    background: #e9eef3;
+    background: #dfe7ee;
     box-shadow:
         4px 4px 8px #a1a7b9,
         -4px -4px 8px #ffffff;
@@ -84,11 +86,24 @@ body {
     position: relative;
     margin-top: clamp(16px, 2vw, 24px);
     margin-bottom: clamp(16px, 2vw, 24px);
+    display: flex;
+    padding: 5px;
     width: 300px;
-    height: 48px;
+    height: 50px;
+
+    overflow: hidden;
+    border-radius: 25px;
+    background: none;
+}
+
+#menuFront {
+    width: 100%;
+    height: 100%;
 
     border-radius: 20px;
+    background: none;
     box-shadow:
         4px 4px 8px #a1a7b9,
         -4px -4px 8px #ffffff;
+
 }
