@@ -49,8 +49,9 @@ PIECES.forEach((p) => {
     piece.addEventListener("pointermove", (e) => {
         e.preventDefault();
         if (!piece.isPointer) return;
-        const rect = gamelayer.getBoundingClientRect();
-        piece.style.left = `${e.clientX - piece.pointerX - rect.left}px`;
-        piece.style.top = `${e.clientY - piece.pointerY - rect.top}px`;
+        piece.X = e.clientX - piece.pointerX;
+        piece.Y = e.clientY - piece.pointerY;
+        piece.style.left = `${piece.X}px`;
+        piece.style.top = `${piece.Y}px`;
     })
 })
