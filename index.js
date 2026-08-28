@@ -19,8 +19,10 @@ PIECES.forEach((p) => {
     piece.textContent = p;
 
     const rect = gamelayer.getBoundingClientRect();
-    piece.style.left = `${Math.random() * (rect.width - 100)}px`;
-    piece.style.top = `${Math.random() * (rect.height - 100)}px`;
+    piece.X = Math.random() * (rect.width - 100);
+    piece.Y = Math.random() * (rect.height - 100);
+    piece.style.left = `${piece.X}px`;
+    piece.style.top = `${piece.Y}px`;
 
     gamelayer.appendChild(piece);
 
@@ -29,10 +31,9 @@ PIECES.forEach((p) => {
     piece.addEventListener("pointerdown", (e) => {
         e.preventDefault();
         piece.isPointer = true;
-        piece.style.background = "#f09d9d"
-        const rect = piece.getBoundingClientRect();
-        piece.pointerX = e.clientX - rect.left;
-        piece.pointerY = e.clientY - rect.top;
+        piece.style.background = "#f09d9d";
+        piece.pointerX = e.clientX - piece.X;
+        piece.pointerY = e.clientY - piece.Y;
         
         piece.setPointerCapture(e.pointerId);
     })
