@@ -2,10 +2,6 @@ document.addEventListener("dblclick", (e) => {
     e.preventDefault();
 }, {passive: false})
 
-document.addEventListener("pointermove", (e) => {
-    e.preventDefault();
-}, {passive: false})
-
 const problem = document.getElementById("problemFront");
 const gamelayer = document.getElementById("GameLayer");
 
