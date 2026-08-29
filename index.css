@@ -19,31 +19,28 @@ body {
 
 #problem {
     position: relative;
-    margin-top: 16px;
-    margin-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     display: flex; 
     justify-content: center;
     align-items: center;  
-    padding: 12px;
-    width: 95%;
-    height: auto;
-    box-sizing: border-box;
 
     font-size: 16px;
     font-family: sans-serif;
+    font-weight: bold;
     color: #e4e5e5;
     border-radius: 20px;
-    background: none;
+    text-shadow: 0 2px 0 #9d333e;
 }
 
 #GameLayer {
     position: relative;
-    width: 95%;
+    align-self: stretch;
+    margin: 0 5px;
     height: 100%;
 
     overflow: hidden;
     border-radius: 12px;
-    background: none;
 }
 
 .pieces {
@@ -61,13 +58,12 @@ body {
     font-family: sans-serif;
     color: #e4e5e5;
     border-radius: 12px;
-    border: 1px solid #496f86;
-    background: #4987ae;
+    border: 1px solid #6b6b6b;
 }
 
 #menu {
     position: relative;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 16px;
     display: flex;
     padding: 5px;
@@ -90,7 +86,7 @@ body {
 
     color: #e4e5e5;
     border-radius: 20px;
-    background: #303030;
+    background: #232323;
     box-shadow:
         4px 4px 8px #202020,
         -4px -4px 8px #929292;
