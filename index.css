@@ -32,17 +32,30 @@ body {
     font-family: sans-serif;
     font-weight: bold;
     color: #e4e5e5;
-    text-shadow: 0 1px 0 #9d333e;
 }
 
-#GameLayer {
+#game {
     position: relative;
     align-self: stretch;
     margin: 0 5px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 
     overflow: hidden;
     border-radius: 12px;
+}
+
+#build {
+    position: relative;
+    width: 100%;
+    height: 65%;
+}
+
+#select {
+    position: relative;
+    width: 100%;
+    height: 35%;
 }
 
 .pieces {
@@ -75,7 +88,20 @@ body {
 
     cursor: pointer;
 
-    overflow: hidden;
     color: #e4e5e5;
     font-size: 25px;
+}
+
+#home {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 50px;
+}
+
+#restart {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 50px;
 }
