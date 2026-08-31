@@ -63,6 +63,7 @@ PIECES.forEach((p) => {
 
     piece.addEventListener("pointerup", (e) => {
         e.preventDefault();
+        if (!piece.isPointer) return;
         piece.style.filter = "brightness(1.0)";
         piece.style.zIndex = "0";
         piece.isPointer = false;
