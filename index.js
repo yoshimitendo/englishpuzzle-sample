@@ -47,8 +47,6 @@ PIECES.forEach((p) => {
 
     const index = Math.round(Math.random() * Selection.length)
     Selection.splice(index, 0, piece)
-
-    linePiece();
     
     piece.addEventListener("pointerdown", (e) => {
         e.preventDefault();
@@ -57,6 +55,8 @@ PIECES.forEach((p) => {
         piece.style.zIndex = "1";
         piece.pointerX = e.clientX - piece.X;
         piece.pointerY = e.clientY - piece.Y;
+
+        piece.style.transition = "none";
         
         piece.setPointerCapture(e.pointerId);
     })
@@ -66,6 +66,10 @@ PIECES.forEach((p) => {
         piece.style.filter = "brightness(1.0)";
         piece.style.zIndex = "0";
         piece.isPointer = false;
+
+        const index = Selection.findIndex(i => i === piece);
+        Selection.splice(index, 1);
+        linePiece();
 
         piece.releasePointerCapture(e.pointerId);
     })
@@ -80,6 +84,8 @@ PIECES.forEach((p) => {
     })
 })
 
+linePiece();
+
 function linePiece() {
     let lineWidth = 5;
     let lineHeight = 5;
@@ -92,6 +98,7 @@ function linePiece() {
         }
         e.X = lineWidth;
         e.Y = lineHeight;
+        e.style.transition = "left 0.2s ease, top 0.2s ease";
         e.style.left = `${e.X}px`;
         e.style.top = `${e.Y}px`
         lineWidth += e.gameWidth + 5;
